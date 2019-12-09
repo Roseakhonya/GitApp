@@ -1,15 +1,15 @@
 <form action="" class="search-form">
     <div class="form-group">
-        <input type="text" class="form-control" placeholder="github search">
-        [(ngModel = "username")] name = "username" (keyup)="findProfile()"
+  <input type="text" class="form-control" placeholder="github search"
+        [(ngModel)]= "username" name = "username" (keyup)="findProfile()">
     </div>
 </form>
 <div>
     <div class="card card-default">
-       <div class="card-heading">
+       <!-- <div class="card-heading">
         {{profile.name}}<small>{{profile.login}}</small>
         <span *ngIf= "profile.company">works at {{profile.company}}</span>
-       </div>
+       </div> -->
        <div class="card-body">
          <div class="row">
              <div class="col m-sm-3">
