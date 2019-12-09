@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfileService } from 'services/profile.service';
-import { Profile } from 'selenium-webdriver/firefox';
+import { ProfileService } from 'src/services/profile.service';
+// import { ProfileService} from 'selenium-webdriver/firefox';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -19,6 +19,7 @@ export class ProfileComponent implements OnInit {
       console.log(profile);
       this.profile;
     });
+    
     this.profileService.getProfileRepos().subscribe(repos =>{
       console.log(this.repos);
       this.repos;
