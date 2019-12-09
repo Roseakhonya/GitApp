@@ -1,7 +1,69 @@
-<div *ngIf = "profile">
-    <div class="panel panel-default">
-       <div class="panel-heading">
-        {{profile.name}}
+<form action="" class="search-form">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="github search">
+        [(ngModel = "username")] name = "username" (keyup)="findProfile()"
+    </div>
+</form>
+<div>
+    <div class="card card-default">
+       <div class="card-heading">
+        {{profile.name}}<small>{{profile.login}}</small>
+        <span *ngIf= "profile.company">works at {{profile.company}}</span>
        </div>
+       <div class="card-body">
+         <div class="row">
+             <div class="col m-sm-3">
+                <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt= "Profile image">
+             </div>
+             <div class="col-sm5">
+                 <ul class="list group">
+                     <li class="list-group" *ngIf = "profile.bio">
+                         {{profile.bio}}
+                     </li>
+                     <li class="list-group" *ngIf = "profile.blog"> <a href="{{profile.blog}}" target = "_blank">
+                        {{profile.blog}}</a>a
+                    </li>
+                    <li class="list-group" *ngIf = "profile.email"><a href = "emailto:{{profile.email}}">
+                            {{profile.email}}</a>
+                    </li>
+                    <li class="list-group" *ngIf = "profile.location">
+                           {{profile.location}}
+                     </li>
+                 </ul>
+             </div>
+             <div class="col sm-4">
+               <div>
+                   <p>
+                       <span class="label label-default">
+                        {{profile.followers}} Followers
+                       </span>
+                       <span class="label label-primary">
+                            {{profile.following}} Following
+                        </span>
+                        <span class="label label-danger">
+                            {{profile.public_repos}} Public repos
+                        </span>
+                        <span class="label label-success">
+                            {{profile.public_gists}} Public gists
+                        </span>
+                   </p>
+                   <p><a href = "{{profile.html_url}}" target = "blank" 
+                    class="btn btn-info btn-sm">View profile</a></p>
+                    <div class= "card card-default">
+                        <h3 class="card-title">Repos</h3>
+                    </div>
+                    <div class = "card-body" *ngFor= "let repo of repos">
+                        <p>
+                            {{repo.name}} <a href="{{repo.html_url}}" target = "_blank" class="btn btn-danger btn-sm">
+                                View project</a>
+                        </p>
+                        <p>
+                             {{repo.description}}
+                        </p>
+                    </div>
+               </div>  
+             </div>
+         </div> 
+       </div> 
     </div>
 </div>
