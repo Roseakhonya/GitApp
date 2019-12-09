@@ -1,10 +1,12 @@
 # GitApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+By Roselyne Akhonya.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -22,7 +24,17 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## BDD
+Load the site on a suitable browser. 
+Enters github username for a specific individual in the form. 
+The application fetches the information for the specific user.
+It is linked to github API which  outputs the users information.
+A button is clicked and helps one to view the user's profile which includes public repos and gists. 
+It also shows the number of followers and those the user is following.
+
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help, send me an email on akhonyarose@gmail.com
+
 # GitApp
+Find the aplication on ""
