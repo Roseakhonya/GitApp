@@ -32,6 +32,12 @@ It is linked to github API which  outputs the users information.
 A button is clicked and helps one to view the user's profile which includes public repos and gists. 
 It also shows the number of followers and those the user is following.
 
+## Technologies used.
+HTML
+CSS
+Angular CLI
+Bootstrap cdn
+
 ## Further help
 
 To get more help, send me an email on akhonyarose@gmail.com
