@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Zilla+Slab&display=swap");
+body {
+  background: url(https://bit.ly/35g7yW1);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h4, h1 {
+    font-family: "Fjalla One";
+    color: deeppink;
+}
+
+p {
+    font-family: "Zilla Slab";
+    color:purple;
+}
+.repos {
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
