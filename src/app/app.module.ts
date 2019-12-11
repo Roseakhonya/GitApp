@@ -8,12 +8,14 @@ import { ProfileService } from '../../src/app/services/profile.service';
 import { FormsModule } from '@angular/forms'
 import { from } from 'rxjs/';
 import { ShadowDirective } from './custom-directive.directive';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     ShadowDirective,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
