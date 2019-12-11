@@ -43,4 +43,4 @@ Bootstrap cdn
 To get more help, send me an email on akhonyarose@gmail.com
 
 # GitApp
-Find the aplication on ""
+Find the aplication on "https://roseakhonya.github.io/GitApp/"
